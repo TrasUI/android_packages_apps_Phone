@@ -642,6 +642,8 @@
     <string name="phone_number_label">Meu número de telefone</string>
     <string name="phone_number_summary">Definir o número de telefone para este dispositivo</string>
     <string name="advanced_setting">Configuração avançada</string>
+    <string name="lockscreen_if_call_ends_with_screenoff">Bloquear ao terminar chamada</string>
+    <string name="lockscreen_if_call_ends_with_screenoff_sum">Bloqueia automaticamente quando uma chamada termina e a tela está desligada.</string>
     <string name="vibrate_outgoing">Vibrar ao atender</string>
     <string name="vibrate_outgoing_sum">Vibra quando a chamada efetuada é atendida</string>
     <string name="vibrate_45">Vibrar a cada 45 segundos</string>
