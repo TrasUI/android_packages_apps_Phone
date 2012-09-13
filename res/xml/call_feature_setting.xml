@@ -42,6 +42,16 @@
         android:title="@string/advanced_setting">
 
         <CheckBoxPreference
+            android:key="keep_proximity_sensor_on"
+            android:title="@string/keep_proximity_sensor_on"
+            android:persistent="true"
+            android:summary="@string/keep_proximity_sensor_on_sum"/>
+        <CheckBoxPreference
+            android:key="lockscreen_if_call_ends_with_screenoff"
+            android:title="@string/lockscreen_if_call_ends_with_screenoff"
+            android:persistent="false"
+            android:summary="@string/lockscreen_if_call_ends_with_screenoff_sum"/>
+        <CheckBoxPreference
             android:key="button_vibrate_outgoing"
             android:title="@string/vibrate_outgoing"
             android:persistent="true" />
@@ -58,11 +68,6 @@
             android:title="@string/vibrate_45"
             android:persistent="true"
             android:summary="@string/vibrate_45_sum" />
-        <CheckBoxPreference
-            android:key="lockscreen_if_call_ends_with_screenoff"
-            android:title="@string/lockscreen_if_call_ends_with_screenoff"
-            android:persistent="false"
-            android:summary="@string/lockscreen_if_call_ends_with_screenoff_sum"/>
     </PreferenceCategory>
 
   <PreferenceCategory
