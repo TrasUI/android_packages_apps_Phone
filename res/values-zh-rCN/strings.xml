@@ -666,6 +666,10 @@
 
     <!-- Advanced Settings -->
     <string name="advanced_setting">高级设置</string>
+    <string name="keep_proximity_sensor_on">保持距离感应器始终开启</string>
+    <string name="keep_proximity_sensor_on_sum">使用耳机的时候也不会关闭距离感应器.</string>
+    <string name="lockscreen_if_call_ends_with_screenoff">通话结束时锁定屏幕</string>
+    <string name="lockscreen_if_call_ends_with_screenoff_sum">当通话结束的时候屏幕自动锁定</string>
     <string name="vibrate_outgoing">对方接听时震动</string>
     <string name="vibrate_call_waiting">呼叫等待时震动</string>
     <string name="vibrate_hangup">通话结束时震动</string>
