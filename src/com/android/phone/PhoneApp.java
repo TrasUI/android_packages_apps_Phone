@@ -1315,7 +1315,6 @@ public class PhoneApp extends Application implements AccelerometerListener.Orien
      * 2) If a wired headset is connected
      * 3) if the speaker is ON
      * 4) If the slider is open(i.e. the hardkeyboard is *not* hidden)
-     * 5) If it was configured to stay on on Phone > Settings > Keep proximity sensor on
      *
      * @param state current state of the phone (see {@link Phone#State})
      */
@@ -1325,13 +1324,11 @@ public class PhoneApp extends Application implements AccelerometerListener.Orien
         if (proximitySensorModeEnabled()) {
             synchronized (mProximityWakeLock) {
                 // turn proximity sensor off and turn screen on immediately if
-                // we are using a headset and is not configured to keep sensor on
-                // the keyboard is open, or the device
+                // we are using a headset, the keyboard is open, or the device
                 // is being held in a horizontal position.
-                boolean keepOn = PhoneUtils.PhoneSettings.keepProximitySensorOn(this);
-                boolean screenOnImmediately = ((!keepOn && isHeadsetPlugged())
+                boolean screenOnImmediately = (isHeadsetPlugged()
                             || PhoneUtils.isSpeakerOn(this)
-                            || (!keepOn && (mBtHandsfree != null) && mBtHandsfree.isAudioOn())
+                            || ((mBtHandsfree != null) && mBtHandsfree.isAudioOn())
                             || mIsHardKeyboardOpen);
 
                 // We do not keep the screen off when the user is outside in-call screen and we are
